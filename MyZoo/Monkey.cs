@@ -10,7 +10,7 @@ namespace MyZoo
     {
         public Monkey(string name, int numberOfLegs) : base(name, numberOfLegs)
         {
-            Monkey a = new Monkey("MonkeyLove", 2);
+            Monkey a = new Monkey("Lovey", 2);
             a.MakeSound();
         }
     }
