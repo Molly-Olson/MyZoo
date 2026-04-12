@@ -8,14 +8,12 @@ namespace MyZoo
 {
     internal class Tiger : Animal, ICanSwim
     {
-        public Tiger(string name, int numberOfLegs) : base(name, numberOfLegs)
+        public Tiger(string name, int age, int numberOfLegs) : base(name, age, numberOfLegs)
         {
         }
             public void Swim()
         { 
             Console.WriteLine(this.Name + " can swim like a champ!");
-            //Tiger a = new Tiger("Tony", 4);
-            //a.MakeSound();
         }
     }
 }

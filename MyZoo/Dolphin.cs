@@ -8,12 +8,12 @@ namespace MyZoo
 {
     internal class Dolphin : Animal, ICanSwim
     {
-        public Dolphin(string name, int numberOfLegs) : base(name, numberOfLegs)
+        public Dolphin(string name, int age, int numberOfLegs) : base(name, age, numberOfLegs)
         {
         }
         public void Swim()
         {
-            Console.WriteLine(this.Name + "Can swim faster than you!");
+            Console.WriteLine(this.Name + " can swim faster than you!");
         }
     }
 }

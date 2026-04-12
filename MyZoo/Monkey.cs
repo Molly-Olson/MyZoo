@@ -8,10 +8,9 @@ namespace MyZoo
 {
     internal class Monkey : Animal
     {
-        public Monkey(string name, int numberOfLegs) : base(name, numberOfLegs)
+        public Monkey(string name, int age, int numberOfLegs) : base(name, age, numberOfLegs)
         {
-            Monkey a = new Monkey("Lovey", 2);
-            a.MakeSound();
+
         }
     }
 }
