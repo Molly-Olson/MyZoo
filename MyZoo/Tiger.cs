@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyZoo
 {
-    internal class Tiger : Animal, ICanSwim
+    internal class Tiger : Animal, ICanSwim, ICanFly
     {
         public Tiger(string name, int age, int numberOfLegs) : base(name, age, numberOfLegs)
         {
@@ -14,6 +14,14 @@ namespace MyZoo
             public void Swim()
         { 
             Console.WriteLine(this.Name + " can swim like a champ!");
+        }
+        public void Fly()
+        {
+            Console.WriteLine(this.Name + " can't fly at all... womp womp");
+        }
+        public override void MakeSound()
+        {
+            Console.WriteLine(this.Name + " says ROAR!");
         }
     }
 }

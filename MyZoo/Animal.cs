@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyZoo
 {
-    internal class Animal
+    public class Animal
     {
         public string Name { get; private set; } = "";
         public int Age { get; private set; }
@@ -18,7 +18,7 @@ namespace MyZoo
             NumberOfLegs = numberOfLegs;
         }
 
-        public void MakeSound() // I made this a void instead of a bool because I want tigers to "roar" monkeys to "oohooh aahaah" and my kids to scream lol how do I do that?!
+        public virtual void MakeSound() // I made this a void instead of a bool because I want tigers to "roar" monkeys to "oohooh aahaah" and my kids to scream lol how do I do that?!
         {
             Console.WriteLine($"{Name} makes sounds, is {Age} years old, and has {NumberOfLegs} legs."); // how do I call the can swim can fly to display here?
             return;

@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace MyZoo
 {
-    internal class Dolphin : Animal, ICanSwim
+    internal class Dolphin : Animal, ICanSwim, ICanFly
     {
         public Dolphin(string name, int age, int numberOfLegs) : base(name, age, numberOfLegs)
         {
+        }
+        public void Fly()
+        {
+            Console.WriteLine(this.Name + " can't fly at all... womp womp");
         }
         public void Swim()
         {
