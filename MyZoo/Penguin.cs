@@ -19,5 +19,12 @@ namespace MyZoo
         {
             Console.WriteLine(this.Name + " can't fly at all... womp womp");
         }
+
+        public new int CageNumber { get; private set; }  // I'm not sure why VS wanted the keyword new here
+            public void AssignCage(int number)
+            {
+                CageNumber = 4;
+            Console.WriteLine(this.Name + " has been assigned to cage number " + base.CageNumber);
+        }
     }
 }

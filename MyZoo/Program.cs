@@ -28,12 +28,27 @@ namespace MyZoo
             Animal b = new Animal("Kimball", 14, 2);
             a.MakeSound();
             b.MakeSound();
-            Tiger c = new Tiger("Tony", 12, 4);
-            c.MakeSound();
-            Monkey d = new Monkey("Lovey",5, 2); // kk but liiiike there has to be a better way to display the animals than this
-            List<Animal> animals = new List<Animal>();
-            d.MakeSound(); // I wanna see names and what animal it is also sure it makes sound but what kind of sound, do they fly or swim? Arg
+            //Animal t = new Animal("Tony", 12, 4);  /// arrrggggg I want all the animals to print out all the things damn it!
+            Tiger t = new Tiger("Tony", 12, 4);
+            t.MakeSound();
+            Monkey m = new Monkey("Lovey",5, 2); // kk but liiiike there has to be a better way to display the animals than this
+            m.MakeSound();
 
+            //    another way to print the same thing
+            //List<Animal> animals = new List<Animal>();
+            //animals.Add(a);
+            //animals.Add(b);
+            //animals.Add(c);
+            //animals.Add(d);
+            //foreach (Animal animal in animals)
+            //{
+            //    animal.MakeSound();
+            //}
+
+            for (int i = 0; i < 3; i++)
+            {
+                Console.Beep(1000, 500);
+            }
         }
     }
 }
