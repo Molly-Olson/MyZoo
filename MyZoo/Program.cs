@@ -49,17 +49,13 @@ while (viewAnimals)
     switch(choice)
     {
         case 1:
-            Console.WriteLine($"Dolphin: " + {animal.Name } + " is " + {animal.Age} + " years old.");
+            Console.WriteLine($"Dolphin: {d.Name} is {d.Age} years old, has {d.NumberOfLegs} legs, lives in cage number {d.CageNumber} but can they fly? {d.ICanFly} ");
             break;
         case 2:
-            Console.WriteLine($"Monkey: " + { animal.Name }
-            +" is " + { animal.Age}
-            +" years old has " + { animal.Legs}
-            +" legs, can(not)... " + { ICanFly}
-            +".");
+            Console.WriteLine($"Monkey: {m.Name} is {m.Age} years old, has {m.NumberOfLegs} legs, lives in cage number {m.CageNumber} and can fly? {m.ICanFly} Wow no way! But can you swim? {m.ICanSwim}");
             break;
         case 3:
-            Console.WriteLine($"Tiger: " + {animal.Name } + " is " + {animal.Age} + " years old has " + {animal.Legs} + " legs, can(not)... " + {ICanFly} + ".");
+            Console.WriteLine($"Tiger: {t.Name }  is {t.Age} years old, has {t.NumberOfLegs} legs, lives in cage number {t.CageNumber} can(not)... {t.ICanFly} bummer bro, but like can you swim? {t.ICanSwim}");
             break;
         case 4:
             Console.WriteLine("Penguin: *waddle*");
