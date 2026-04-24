@@ -11,13 +11,11 @@ namespace MyZoo
         public string Name { get; set; } // I still feel like these should be private set
         public int Age { get; set; }
         public int NumberOfLegs { get; set; }
-        public int CageNumber { get; set; }
-        public Animal(string name, int age, int numberOfLegs, int cageNumber)
+        public Animal(string name, int age, int numberOfLegs)
         {
             Name = name;
             Age = age;
             NumberOfLegs = numberOfLegs;
-            CageNumber = cageNumber; // I think I'm confusing myself again... I have a cage class to call arrggg!
         }
 
         public virtual void MakeSound() // I made this a void instead of a bool because I want tigers to "roar" monkeys to "oohooh aahaah" and my kids to scream lol how do I do that?!
