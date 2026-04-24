@@ -6,29 +6,23 @@ using System.Threading.Tasks;
 
 namespace MyZoo
 {
-    public class Animal
+    internal class Animal
     {
-        public string Name { get; private set; } = "";
-        public int Age { get; private set; }
-        public int NumberOfLegs { get; private set; }
-        public int CageNumber { get; private set; }
-
-        public bool ICanSwim = false;
-        public bool ICanFly = false;
-        public Animal(string name, int age, int numberOfLegs, int cageNumber, bool ICanSwim, bool ICanFly )
+        public string Name { get; set; } // I still feel like these should be private set
+        public int Age { get; set; }
+        public int NumberOfLegs { get; set; }
+        public int CageNumber { get; set; }
+        public Animal(string name, int age, int numberOfLegs, int cageNumber)
         {
             Name = name;
             Age = age;
             NumberOfLegs = numberOfLegs;
-            CageNumber = cageNumber;
-            ICanSwim = true;
-            ICanFly = true;
+            CageNumber = cageNumber; // I think I'm confusing myself again... I have a cage class to call arrggg!
         }
 
         public virtual void MakeSound() // I made this a void instead of a bool because I want tigers to "roar" monkeys to "oohooh aahaah" and my kids to scream lol how do I do that?!
         {
-            Console.WriteLine($"{Name} makes sounds, is {Age} years old and has {NumberOfLegs} legs, lives in cage {CageNumber}. Can swim: {ICanSwim}. Can fly: {ICanFly}.");
-            return;
+            Console.WriteLine($"{Name} makes sounds.");
         }
     }
 }

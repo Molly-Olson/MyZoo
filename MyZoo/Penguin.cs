@@ -10,7 +10,7 @@ namespace MyZoo
     {
         public Penguin(string name, int age, int numberOfLegs) : base(name, age, numberOfLegs)
         {
-            Penguin penguin = new Penguin("Penny", 3, 2);
+          //  Penguin penguin = new Penguin("Penny", 3, 2);
         }
         public void Swim()
         {
@@ -21,11 +21,9 @@ namespace MyZoo
             Console.WriteLine(this.Name + " can't fly at all... womp womp");
         }
 
-        public new int CageNumber { get; private set; }  // I'm not sure why VS wanted the keyword new here
-            public void AssignCage(int number)
-            {
-                CageNumber = 4;
-            Console.WriteLine(this.Name + " has been assigned to cage number " + base.CageNumber);
+        public override void MakeSound()
+        {
+            Console.WriteLine(this.Name + " says: 'What does the fox say?!'");
         }
     }
 }

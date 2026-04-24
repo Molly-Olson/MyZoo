@@ -17,23 +17,27 @@ Console.WriteLine("");
 Console.WriteLine("Welcome to My zoo, this is my circus and these are infact MY monkeys!");
 Console.WriteLine("");
 
-Animal a = new Animal("Billie", 6, 2);
-Animal b = new Animal("Kimball", 14, 2);
-a.MakeSound();
-b.MakeSound();
+//Animal a = new Animal("Billie", 6, 2);
+//Animal b = new Animal("Kimball", 14, 2);
+//a.MakeSound();
+//b.MakeSound();
 //Animal t = new Animal("Tony", 12, 4);  /// arrrggggg I want all the animals to print out all the things damn it!
 Tiger t = new Tiger("Tony", 12, 4);
-t.MakeSound();
+//t.MakeSound();
 Monkey m = new Monkey("Lovey", 5, 2); // kk but liiiike there has to be a better way to display the animals than this
-m.MakeSound();
+//m.MakeSound();
 // is this below code even doing anything? I'm struggling understanding where things are being printed from I think
-List<Animal> animals = new List<Animal>
-            {
-                new Animal("Billie", 6, 2),
-                new Animal("Kimball", 14, 2),
-                new Tiger("Tony", 12, 4),
-                new Monkey("Lovey",5, 2)
-            };
+Dolphin d = new Dolphin("Firt", 6, 0);
+Penguin p = new Penguin("Farkle", 3, 2);
+
+
+//List<Animal> animals = new List<Animal>
+//            {
+//                new Animal("Billie", 6, 2),
+//                new Animal("Kimball", 14, 2),
+//                new Tiger("Tony", 12, 4),
+//                new Monkey("Lovey",5, 2)
+//            };
 
 bool viewAnimals = true;
 while (viewAnimals)
@@ -49,16 +53,16 @@ while (viewAnimals)
     switch(choice)
     {
         case 1:
-            Console.WriteLine($"Dolphin: {d.Name} is {d.Age} years old, has {d.NumberOfLegs} legs, lives in cage number {d.CageNumber} but can they fly? {d.ICanFly} ");
+            Console.WriteLine($"Dolphin: {d.Name} is {d.Age} years old, and has {d.NumberOfLegs} legs.");
             break;
         case 2:
-            Console.WriteLine($"Monkey: {m.Name} is {m.Age} years old, has {m.NumberOfLegs} legs, lives in cage number {m.CageNumber} and can fly? {m.ICanFly} Wow no way! But can you swim? {m.ICanSwim}");
+            Console.WriteLine($"Monkey: {m.Name} is {m.Age} years old, and has {m.NumberOfLegs} legs.");
             break;
         case 3:
-            Console.WriteLine($"Tiger: {t.Name }  is {t.Age} years old, has {t.NumberOfLegs} legs, lives in cage number {t.CageNumber} can(not)... {t.ICanFly} bummer bro, but like can you swim? {t.ICanSwim}");
+            Console.WriteLine($"Tiger: {t.Name }  is {t.Age} years old, and has {t.NumberOfLegs} legs.");
             break;
         case 4:
-            Console.WriteLine("Penguin: *waddle*");
+            Console.WriteLine($"Penguin: {p.Name} is {p.Age} years old, and has {p.NumberOfLegs} legs.");
             break;
         case 5:
             viewAnimals = false;
@@ -68,6 +72,10 @@ while (viewAnimals)
             Console.WriteLine("Invalid choice. Please select a valid option.");
             break;
     }
+    //if ()
+    //{
+        
+    //}
 
 }
 

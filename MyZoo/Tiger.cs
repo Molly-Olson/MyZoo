@@ -10,7 +10,7 @@ namespace MyZoo
     {
         public Tiger(string name, int age, int numberOfLegs) : base(name, age, numberOfLegs)
         {
-            Tiger tiger = new Tiger("Tony", 12, 4);
+           
         }
             public void Swim()
         { 
