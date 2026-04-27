@@ -46,8 +46,9 @@ foreach (Cage cage in cages)
     Console.WriteLine("");
 }
 
-//one.ShowAnimals();
-//one.MakeSounds();
+// this is silly you would have to repeat each cage 
+one.ShowAnimals();
+one.MakeSounds();
 //one.ICanFly(); // how do I use the interfaces
 
 
