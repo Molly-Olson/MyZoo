@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace MyZoo
 {
-    internal class Cage 
+    internal class Cage
     {
-        public int CageNumber { get; set; }
+        public int CageNum { get; set; }
         private List<Animal> animals;
-        public Cage(int number)
+        public Cage(int cageNum)
         {
-            CageNumber = number;
+            CageNum = cageNum;
             animals = new List<Animal>();
         }
         public void AddAnimal(Animal animal)
@@ -21,7 +21,7 @@ namespace MyZoo
         }
         public void ShowAnimals()
         {
-            Console.WriteLine($"Cage {CageNumber} contains: ");
+            Console.WriteLine($"Cage {CageNum} contains: ");
             foreach (Animal animal in animals)
             {
                 Console.WriteLine($"{animal.Name} ({animal.GetType().Name})");
@@ -34,7 +34,37 @@ namespace MyZoo
                 animal.MakeSound();
             }
         }
-        
-        
     }
 }
+
+
+//        public int CageNumber { get; set; }
+//        private List<Animal> animals;
+//        public Cage(int cageNum)
+//        {
+//            CageNum = cagenum;
+//            animals = new List<Animal>();
+//        }
+//        public void AddAnimal(Animal animal)
+//        {
+//            animals.Add(animal);
+//        }
+//        public void ShowAnimals()
+//        {
+//            Console.WriteLine($"Cage {CageNumber} contains: ");
+//            foreach (Animal animal in animals)
+//            {
+//                Console.WriteLine($"{animal.Name} ({animal.GetType().Name})");
+//            }
+//        }
+//        public void MakeSounds()
+//        {
+//            foreach (Animal animal in animals)
+//            {
+//                animal.MakeSound();
+//            }
+//        }
+        
+        
+//    }
+//}

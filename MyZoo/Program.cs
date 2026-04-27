@@ -17,18 +17,39 @@ Console.WriteLine("");
 Console.WriteLine("Welcome to My zoo, this is my circus and these are infact MY monkeys!");
 Console.WriteLine("");
 
-//Animal a = new Animal("Billie", 6, 2);
-//Animal b = new Animal("Kimball", 14, 2);
-//a.MakeSound();
-//b.MakeSound();
-//Animal t = new Animal("Tony", 12, 4);  /// arrrggggg I want all the animals to print out all the things damn it!
+Animal a = new Animal("Billie", 6, 2);
+Animal b = new Animal("Kimball", 14, 2);
+a.MakeSound();
+b.MakeSound();
 Tiger t = new Tiger("Tony", 12, 4);
-//t.MakeSound();
-Monkey m = new Monkey("Lovey", 5, 2); // kk but liiiike there has to be a better way to display the animals than this
-//m.MakeSound();
-// is this below code even doing anything? I'm struggling understanding where things are being printed from I think
-Dolphin d = new Dolphin("Firt", 6, 0);
+Monkey m = new Monkey("Lovey", 5, 2);
+Dolphin d = new Dolphin("Flirt", 6, 0);
 Penguin p = new Penguin("Farkle", 3, 2);
+
+Cage one = new Cage(1); // this is a constructor molly :) so are those up there 
+one.AddAnimal(d);
+Cage two = new Cage(2);
+two.AddAnimal(m);
+Cage three = new Cage(3);
+three.AddAnimal(t);
+Cage four = new Cage(4);
+four.AddAnimal(p);
+Cage five = new Cage(5);
+five.AddAnimal(a);
+five.AddAnimal(b);
+
+List<Cage> cages = new List<Cage> { one, two, three, four, five };
+foreach (Cage cage in cages)
+{
+    cage.ShowAnimals();
+    cage.MakeSounds();
+    Console.WriteLine("");
+}
+
+//one.ShowAnimals();
+//one.MakeSounds();
+//one.ICanFly(); // how do I use the interfaces
+
 
 
 //List<Animal> animals = new List<Animal>
@@ -54,6 +75,7 @@ while (viewAnimals)
     {
         case 1:
             Console.WriteLine($"Dolphin: {d.Name} is {d.Age} years old, and has {d.NumberOfLegs} legs.");
+            
             break;
         case 2:
             Console.WriteLine($"Monkey: {m.Name} is {m.Age} years old, and has {m.NumberOfLegs} legs.");
